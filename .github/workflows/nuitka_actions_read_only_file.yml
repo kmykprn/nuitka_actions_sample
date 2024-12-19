@@ -1,6 +1,12 @@
 name: Nuitka Actions Read Only File
 run-name: ${{ github.actor }} is testing out Nuitka Actions
-on: [push]
+
+on:
+  push:
+    paths:
+      - 'nuitka_actions_read_only_file.yml'  # このファイルの変更時にトリガー
+      - 'read_only_file.py'                  # 関連するコード変更も許可
+
 jobs:
   build:
     strategy:

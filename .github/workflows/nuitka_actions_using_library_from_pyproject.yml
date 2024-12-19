@@ -1,6 +1,11 @@
 name: Nuitka Actions Using Library from Pyproject
 run-name: ${{ github.actor }} using library from pyproject
-on: [push]
+on:
+  push:
+    paths:
+      - 'nuitka_actions_using_library_from_pyproject.yml'  # このファイルの変更時にトリガー
+      - 'using_library_from_pyproject.py'                  # 関連するコード変更も許可
+
 jobs:
   build:
     strategy:
