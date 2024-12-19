@@ -35,6 +35,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install -r requirements_pyproject.txt
+          pip list
 
       - name: Build Executable
         uses: Nuitka/Nuitka-Action@main
