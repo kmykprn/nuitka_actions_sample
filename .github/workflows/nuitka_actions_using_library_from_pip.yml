@@ -1,4 +1,4 @@
-name: Nuitka Actions Demo
+name: Nuitka Actions Using Library from PIP
 run-name: ${{ github.actor }} using library from pip
 on: [push]
 jobs:

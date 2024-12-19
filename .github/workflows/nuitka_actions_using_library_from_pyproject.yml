@@ -1,4 +1,4 @@
-name: Nuitka Actions Demo
+name: Nuitka Actions Using Library from Pyproject
 run-name: ${{ github.actor }} using library from pyproject
 on: [push]
 jobs:
@@ -24,9 +24,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install poetry
 
-      - name: Install Dependencies
+      - name: Configure Poetry to Install Dependencies Globally
         run: |
-          poetry install
+          poetry config virtualenvs.create false
+          poetry install --no-interaction --no-ansi
 
       - name: Build Executable
         uses: Nuitka/Nuitka-Action@main

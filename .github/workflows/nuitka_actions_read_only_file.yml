@@ -1,4 +1,4 @@
-name: Nuitka Actions Demo
+name: Nuitka Actions Read Only File
 run-name: ${{ github.actor }} is testing out Nuitka Actions
 on: [push]
 jobs:
