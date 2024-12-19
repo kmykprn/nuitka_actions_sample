@@ -1,0 +1,2 @@
+- 参考にしたサイト
+    - https://github.com/python-poetry/poetry-plugin-export

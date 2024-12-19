@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'nuitka_actions_using_library_from_pyproject.yml'  # このファイルの変更時にトリガー
-      - 'using_library_from_pyproject.py'                  # 関連するコード変更も許可
+      - 'src/using_library_from_pyproject.py'                  # 関連するコード変更も許可
 
 jobs:
   build:
