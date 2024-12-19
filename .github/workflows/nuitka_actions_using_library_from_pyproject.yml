@@ -26,10 +26,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install poetry
+          pip install poetry-plugin-export
 
       - name: Create requirements_pyproject.txt from pyproject.toml
         run: |
-          poetry export -f requirements_pyproject.txt --output requirements.txt --without-hashes
+          poetry export -f requirements.txt --output requirements_pyproject.txt --without-hashes
 
       - name: Install Dependencies
         run: |
