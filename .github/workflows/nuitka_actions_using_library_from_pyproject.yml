@@ -39,7 +39,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -r requirements_pyproject.txt
+          pip install -r requirements_pyproject.txt --trusted-host pypi.org
           pip list
 
       - name: Build Executable
