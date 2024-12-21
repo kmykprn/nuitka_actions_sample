@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - '.github/workflows/test_read_only_file.yml'  # このファイルの変更時にトリガー
-      - &main_script_path 'test/read_only_file.py'   # アンカーでファイルパスを定義
+      - 'test/read_only_file.py'                     # 関連するファイルが変更されたとき
 
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
         uses: Nuitka/Nuitka-Action@main
         with:
           nuitka-version: main
-          script-name: *main_script_path                  # アンカーで定義した値を参照
+          script-name: 'test/read_only_file.py'
           mode: app
 
       - name: Upload Artifacts
