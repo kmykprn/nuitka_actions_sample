@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} is testing Read Only File
 on:
   push:
     paths:
-      - '.github/workflows/test_read_only_file.yml'  # このファイルの変更時にトリガー
+      - '.github/workflows/test_read_only_file.yaml'  # このファイルの変更時にトリガー
       - 'test/read_only_file.py'                     # 関連するファイルが変更されたとき
 
 jobs:
