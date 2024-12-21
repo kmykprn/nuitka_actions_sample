@@ -1,7 +1,7 @@
 # 外部ディレクトリ画像を表示できるかを確認するコード
 import cv2
 
-image = cv2.imread("image/daruma.jpg")
+image = cv2.imread("../image/daruma.jpg")
 
 if image is None:
     print("画像を読み込めませんでした。ファイルパスを確認してください。")
