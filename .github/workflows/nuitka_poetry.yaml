@@ -1,10 +1,11 @@
 name: Nuitka Poetry from Python
-run-name: ${{ github.actor }} using library from pyproject
+run-name: ${{ github.actor }} using Nuitka on local
 on:
   push:
     paths:
       - '.github/workflows/nuitka_poetry.yaml'  # このファイルの変更時にトリガー
       - 'src/using_library_from_pyproject.py'   # 関連するコード変更も許可
+      - 'pyproject.toml'   # 関連するコード変更も許可
 
 jobs:
   build:
