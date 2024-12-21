@@ -47,6 +47,8 @@ jobs:
           nuitka-version: main
           script-name: test/read_external_image.py
           mode: app
+          include-data-dir: |
+            image=image
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
