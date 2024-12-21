@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} using library from pip
 on:
   push:
     paths:
-      - 'nuitka_actions_using_library_from_pip.yml'  # このファイルの変更時にトリガー
+      - '.github/workflows/nuitka_actions_using_library_from_pip.yml'  # このファイルの変更時にトリガー
       - 'src/using_library_from_pip.py'                  # 関連するコード変更も許可
 jobs:
   build:
