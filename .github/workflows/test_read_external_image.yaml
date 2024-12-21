@@ -46,7 +46,7 @@ jobs:
         with:
           nuitka-version: main
           script-name: test/read_external_image.py
-          mode: app
+          mode: standalone
           include-data-dir: |
             image=image
 
@@ -55,7 +55,4 @@ jobs:
         with:
           name: ${{ runner.os }} Read External Image
           path: |
-            build/*.exe
-            build/*.bin
-            build/*.app/**/*
-          include-hidden-files: true
+            build/**/*
